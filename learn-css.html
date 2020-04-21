@@ -3,22 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
     <title>CSS</title>
-    p{
-        font-size: 50px;
-        line-height: 30px;
-        font-family: 幼圆,黑体;
-        font-style: italic;
-        font-weight: blod;
-        font-variant: small-caps;
-    }
+    <style type="text/css">
+        p{
+            font-size: 20px;
+            line-height: 30px;
+            font-family: "Times New Roman","幼圆","黑体";
+            font-style: italic;
+            font-weight: blod;
+            font-variant: small-caps;
+        }
+        #p1:hover{
+            cursor: pointer;
+            text-decoration:underline;
+        }
+        #p2:hover{
+            cursor:help;
+            overflow:auto;
+        }
+        div{
+            width: 100px;
+			height: 100px;
+			background-color: #00cc66;
+			margin-right: 100px;
+            font: 700 14px/24px "宋体"
+        }
+        #div1{
+			overflow: auto;/*超出的部分让浏览器自行解决*/
+		}
+		#div2{
+			overflow: visible;/*超出的部分会显示出来*/
+		}
+
+		#div3{
+			overflow: hidden;/*超出的部分将剪切掉*/
+		}
+        ul{
+            width: 420px;
+			height: 60px;
+        }
+        #ul1{
+			list-style: none;/*去掉列表前面的圆点*/
+			background-color: black;/*设置整个导航栏的背景为灰色*/
+		}
+        #ul2{
+            list-style-image: url(1.jpg);
+            margin-left:280px ;
+        }
+		li{
+
+        }
+        #li1{
+			float: left;/*平铺*/
+			margin-right: 30px;
+			margin-top: 16px;
+		}
+        #li2{
+            list-style-image: url(1.jpg);
+            margin-left:280px ;
+        }
+		a{
+			text-decoration: none;/*去掉超链的下划线*/
+			font-size: 20px;
+			color: #BBBBBB;/*设置超链的字体为黑色*/
+			font-family:微软雅黑;
+		}
+
+    </style>
 </head>
 <body>
-    <p>
-        幼圆字体测试，幼圆字体测试
-        幼圆字体测试，幼圆字体测试
-        幼圆字体测试，幼圆字体测试
-        幼圆字体测试，幼圆字体测试
+    <p id="p1">
+        幼圆字体测试，幼圆字体测试a
+        幼圆字体测试，幼圆字体测试b
+        幼圆字体测试，幼圆字体测试c
+        幼圆字体测试，幼圆字体测试d
     </p>
+    <div id="div1">
+        宋体字体测试，宋体字体测试,宋体字体测试，宋体字体测试,宋体字体测试，宋体字体测试</div>
+    <div id="div2">
+        宋体字体测试，宋体字体测试宋体字体测试，宋体字体测试,宋体字体测试，宋体字体测试
+    </div>
+    <div id="div3">
+        宋体字体测试，宋体字体测试宋体字体测试，宋体字体测试,宋体字体测试，宋体字体测试
+    </div>
+    <p id="p2">列表属性list-style-image</p>
+    <ul id="ul">
+        <li id="li">赵佳豪</li>
+        <li id="li">赵佳豪</li>
+    </ul>
+    <table>
+        <tr>
+            <td><img src="1.jpg" ></td>
+            <td><img src="1.jpg" style="filter:sepia()"></td>
+        </tr>
+    </table>
+    <ul id="ul1">
+		<li id="li1"><a href="">博客园</a></li>
+		<li id="li1"><a href="">新随笔</a></li>
+		<li id="li1"><a href="">联系</a></li>
+		<li id="li1"><a href="">订阅</a></li>
+		<li id="li1"><a href="">管理</a></li>
+	</ul>
 </body>
 </html>
