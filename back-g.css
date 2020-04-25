@@ -1,0 +1,94 @@
+.larger{
+    font-size: larger;
+}
+.grey{
+    color: #cccccc;
+}
+.img_wrap {
+    display: flex;
+}
+.img {
+    width: 200px;
+    height: 300px;
+    border:1px solid red;
+    background: url(pin.jpg) no-repeat;
+    margin-right: 20px;
+}
+.div1 {
+    background-size: cover;
+    background-origin: padding-box; 
+
+}
+.div2{
+    background-size: contain;
+
+}
+.div3 {
+    background-size: cover;
+    background-position: center;
+
+}
+.div4{
+    background-size: contain;
+    background-position: center;
+
+}
+.div5{
+    background-image: linear-gradient(to right, yellow, green);
+}
+.div6{
+    background-image: linear-gradient(30deg,white, black);
+}
+.div7{
+    background-image: linear-gradient(45deg,
+    yellow 0%,
+    yellow 25%,
+    blue 25%,
+    blue 50%,
+    red 50%,
+    red 75%,
+    green 75%,
+    green 100%
+    );
+}
+.div8{
+    background-image: radial-gradient(100px at center,yellow ,green);
+}
+.div9{
+    width: 200px;
+    height: 200px;
+    margin: 40px auto;
+    border-radius: 100px;
+    background-color: rgb(105, 153, 8);
+    background-image: radial-gradient(
+            200px at 100px 100px,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.5));
+}
+.div10 {	
+width: 700px;
+height: 700px;
+border: 1px solid red;
+background: url(pin2.jpg) no-repeat;
+background-size: cover;
+background-position: center;
+
+/* 裁剪出圆形区域 */
+clip-path: circle(200px at 350px 350px);
+transition: clip-path 0.5s;
+}
+.div10:hover{
+/* 鼠标悬停时，裁剪出更大的圆形 */
+clip-path: circle(320px at 350px 350px);
+}
+.box{
+    height: 800px;
+    border: 1px solid #000;
+    margin: 10px auto;
+    /* 给盒子加多个背景，按照背景语法格式书写，多个背景使用逗号隔开 */
+    background: url(pin3.jpg) no-repeat left top,
+    url(pin3.jpg) no-repeat right top,
+    url(pin3.jpg) no-repeat right bottom,
+    url(pin3.jpg) no-repeat left bottom,
+    url(pin3.jpg) no-repeat center;
+}

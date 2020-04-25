@@ -5,37 +5,44 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<style>
-		.img_wrap {
-			display: flex;
-		}
-		.img {
-			width: 6000px;
-			height: 6000px;
-			border:1px solid red;
-			background: url(background.jpg) no-repeat;
-			margin-right: 20px;
-		}
-
-		.div1 {
-			background-size: cover;
-		}
-		.div2{
-			background-size: contain;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="back-g.css"></link>
 </head>
 
 <body>
+	<iframe src="css-渐变.html" width="1300" height="100" frameborder="0"></iframe>
+	<p class="grey">CSS的四种基本选择器</p>	
+	<div class="larger">
+		CSS选择器：就是指定CSS要作用的标签，那个标签的名称就是选择器。意为：选择哪个容器。
+	CSS的选择器分为两大类：基本选择题和扩展选择器。
+	</div>
+	<p class="grey">基本选择器：</p>
+	<div class="larger">
+		标签选择器：针对一类标签
+		ID选择器：针对某一个特定的标签使用
+		类选择器：针对你想要的所有标签使用
+		通用选择器（通配符）：针对所有的标签都适用（不建议使用）
+	</div>
+
+
+
 	<section class="img_wrap">
 		<div class="img div1"></div>
-    </section>
-    <section class="img_wrap">
 		<div class="img div2"></div>
-
+		<div class="img div5"></div>
+		<div class="img div6"></div>
+		<div class="img div7"></div>
+		<div class="img div8"></div>
+	</section>
+	<section class="img_wrap">
+		<div class="img div3"></div>
+		<div class="img div4"></div>
+		<div class="img div9"></div>
+	</section>
+	<section class="img_wrap">
+		<div class="div10"></div>
+		<iframe src="clip-path.html" width="700" height="700" frameborder="0"></iframe>
 	</section>
 	<div class="box"></div>
-	<iframe src="css-渐变.html" width="1300" height="100" frameborder="0"></iframe>
 </body>
 
 </html>
