@@ -1,8 +1,28 @@
+p{
+    line-height: 28px;
+}
 .larger{
     font-size: larger;
+    font-weight: bold;
+}
+.small{
+    font-size: medium;
 }
 .grey{
-    color: #cccccc;
+    font-weight: bold;
+    background-color: #cccccc;
+    color: #000000;
+}
+.yanchang{
+    width: 625px;    
+}
+.tdu{
+    text-decoration: underline;
+}
+hr{
+    text-align: "center";
+    color: black;
+    width: 90%;
 }
 .img_wrap {
     display: flex;
@@ -13,6 +33,14 @@
     border:1px solid red;
     background: url(pin.jpg) no-repeat;
     margin-right: 20px;
+}
+.img_wrap2{
+    width: 1000px;
+    height: 700px;
+}
+.img2{
+    width: 500px;
+    height: 550px;
 }
 .div1 {
     background-size: cover;
@@ -65,24 +93,24 @@
             rgba(0, 0, 0, 0),
             rgba(0, 0, 0, 0.5));
 }
-.div10 {	
+#div10 {	
 width: 700px;
 height: 700px;
 border: 1px solid red;
 background: url(pin2.jpg) no-repeat;
 background-size: cover;
 background-position: center;
-
 /* 裁剪出圆形区域 */
 clip-path: circle(200px at 350px 350px);
 transition: clip-path 0.5s;
 }
-.div10:hover{
+#div10:hover{
 /* 鼠标悬停时，裁剪出更大的圆形 */
 clip-path: circle(320px at 350px 350px);
 }
+
 .box{
-    height: 800px;
+    height: 650px;
     border: 1px solid #000;
     margin: 10px auto;
     /* 给盒子加多个背景，按照背景语法格式书写，多个背景使用逗号隔开 */
@@ -91,4 +119,5 @@ clip-path: circle(320px at 350px 350px);
     url(pin3.jpg) no-repeat right bottom,
     url(pin3.jpg) no-repeat left bottom,
     url(pin3.jpg) no-repeat center;
+    background-color: black;
 }
