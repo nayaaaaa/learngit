@@ -2,6 +2,8 @@ div .p1{
     background-color: gray;
     color: #000;
     font-size: larger;
+    margin-top:10px;
+    margin-bottom: 10px;
 }
 div .p2{
     font-size: medium;
@@ -15,16 +17,20 @@ div .p3{
     width: 0;
 	height: 0;
 	border: 200px solid transparent;
-	border-top-color: red;
+	border-top-color: grey;
 	border-bottom: none;
 }
 .div2{
 	width: 0;
 	height: 0;
-	border-top: 300px solid red;
+	border-top: 300px solid gray;
 	/* 通过改变 border-left 和 border-right 中的像素值，来改变三角形的形状 */
 	border-left: 200px solid transparent;
     border-right: 200px solid transparent;
+}
+.div3{
+    width: 300px;
+    border: 1px solid black;
 }
 p .bold{
     font-weight: bold;
@@ -92,4 +98,12 @@ tr .td2:hover{
 }
 .ul1 li{
     color: dodgerblue;
+}
+.ul2{
+    font-family: 'Times New Roman',幼圆;
+}
+.ul3{
+    width: 100px;
+    border: 1px solid black;
+    font-family: 'Times New Roman',幼圆;
 }

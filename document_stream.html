@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>标准文档流</title>
+    <link rel="stylesheet" href="P-class.css">
+</head>
+<body>
+      <div>
+          <p class="p1">行内元素和块级元素</p>
+          <p class="p2">行内元素：span、a、b、i、u、em</p>
+          <ul class="ul2">
+              <li>与其他行内元素并排；</li>
+              <li>不能设置宽、高。默认的宽度，就是文字的宽度。
+            </li>
+          </ul>
+          <p class="p2">块级元素：div、p、h系列、li、dt、dd</p>
+          <ul class="ul2">
+              <li>霸占一行，不能与其他任何元素并列；</li>
+              <li>能接受宽、高。如果不设置宽度，那么宽度将默认变为父亲的100%。</li>
+          </ul>
+          <div class="div3">
+            <p class="p2">从HTML的角度来讲，标签分为：</p>
+            <p class="p2">文本级标签：p、span、a、b、i、u、em </p>
+            <p class="p2">容器级标签：div、h系列、li、dt、dd</p>
+          </div>
+          <p class="p1">行内元素和块级元素的相互转换</p>
+          <p class="p2">块级->行内： display: inline;</p>
+          <p class="p2">行内->块级： display: block;</p>
+      </div>
+      <div>
+           <p class="p1">元素脱离标准文档流：</p>
+           <ul class="ul3">
+              <li>浮动</li>
+              <li>绝对定位</li>
+              <li>固定定位</li>
+           </ul>
+           <p class="p1">一、浮动</p>
+           <p class="p2">用法：float: left;</p>
+          <ul class="ul2">
+              <li>浮动的元素脱标;</li>
+              <li>浮动的元素互相贴靠;</li>
+              <li>浮动的元素有“字围”效果;</li>
+              <li>收缩</li>
+          </ul>
+           
+      </div>
+</body>
+</html>
