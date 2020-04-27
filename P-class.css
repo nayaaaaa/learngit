@@ -11,6 +11,20 @@ div .p3{
     font-size: small;
     font-family: 'Times New Roman', 幼圆;
 }
+.div1{
+    width: 0;
+	height: 0;
+	border: 200px solid transparent;
+	border-top-color: red;
+	border-bottom: none;
+}
+.div2{
+	width: 0;
+	height: 0;
+	border-top: 300px solid red;
+	/* 通过改变 border-left 和 border-right 中的像素值，来改变三角形的形状 */
+	border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
 }
 p .bold{
     font-weight: bold;
