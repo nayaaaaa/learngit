@@ -34,6 +34,11 @@ hr{
     background: url(pin.jpg) no-repeat;
     margin-right: 20px;
 }
+.img-1 {
+    width: 200px;
+    height: 300px;
+    border:1px solid red;
+}
 .img_wrap2{
     width: 1000px;
     height: 700px;
@@ -82,16 +87,49 @@ hr{
 .div8{
     background-image: radial-gradient(100px at center,yellow ,green);
 }
-.div9{
+.div9-1{
     width: 200px;
     height: 200px;
     margin: 40px auto;
     border-radius: 100px;
-    background-color: rgb(105, 153, 8);
+    background-color: rgb(20, 153, 187);
     background-image: radial-gradient(
             200px at 100px 100px,
             rgba(0, 0, 0, 0),
             rgba(0, 0, 0, 0.5));
+}
+.div9-2{
+    width: 200px;
+    height: 200px;
+    margin: 40px auto;
+    border-radius: 100px;
+    background-color: rgb(99, 98, 98);
+    background-image: radial-gradient(
+            200px at 100px 100px,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.7));
+}
+.div9-3{
+    width: 200px;
+    height: 200px;
+    margin: 40px auto;
+    border-radius: 100px;
+    background-color: rgb(194, 41, 130);
+    background-image: radial-gradient(
+            200px at 100px 100px,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.7));
+}
+.div9-4{
+    width: 200px;
+    height: 200px;
+    margin: 40px auto;
+    border-radius: 100px;
+    background-color: rgb(240, 153, 53);
+    background-image: radial-gradient(
+            200px at 100px 100px,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.7));
 }
 #div10 {	
 width: 700px;
@@ -101,12 +139,12 @@ background: url(pin2.jpg) no-repeat;
 background-size: cover;
 background-position: center;
 /* 裁剪出圆形区域 */
-clip-path: circle(200px at 350px 350px);
+clip-path: circle(180px at 350px 350px);
 transition: clip-path 0.5s;
 }
 #div10:hover{
 /* 鼠标悬停时，裁剪出更大的圆形 */
-clip-path: circle(320px at 350px 350px);
+clip-path: circle(270px at 350px 350px);
 }
 
 .box{

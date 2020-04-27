@@ -1,0 +1,70 @@
+div .p1{
+    background-color: gray;
+    color: #000;
+    font-size: larger;
+}
+div .p2{
+    font-size: medium;
+    font-family: 'Times New Roman', 幼圆;
+}
+p .bold{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:link{
+    color:blue;
+}
+/*超链接点击之后*/
+a:visited{
+    color:black;
+}
+/*鼠标悬停，放到标签上的时候*/
+a:hover{
+    color:blue;
+}
+/*鼠标点击链接，但是不松手的时候*/
+a:active{
+    color:grey;
+}
+div input:focus{
+    border:3px solid #FF6F3D;
+    color:white;
+    background-color:#6a6a6a;
+}
+
+/*
+鼠标放在标签上时显示蓝色
+*/
+div label:hover{
+    color:blue;
+}
+
+/*
+点击标签鼠标没有松开时显示红色
+*/
+div label:active{
+    color:red;
+}
+div .t1{
+    width: 400px;
+    height: 300px;
+    border: 1px solid blue;
+    border-collapse: collapse;
+}
+table .tr1:hover{
+    background: #868686;
+    border:2px solid;
+
+
+}
+tr .td1{
+    border: 1px solid red;
+}
+tr .td2{
+    border:2px solid blue;
+}
+tr .td2:hover{
+    border: 3px solid black;
+    background: darkgray;
+}
