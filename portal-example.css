@@ -19,7 +19,7 @@ div .p1{
     float: left;
     width: 277px;
     height: 103px;
-    background-image: url(pin3.jpg);
+    background-image: url(picture/pin3.jpg);
     background-position: center;
 }
 .header .language{
@@ -59,7 +59,7 @@ div .p1{
     float: left;
     width: 310px;
     height: 435px;
-    background-image: url(pin.jpg);
+    background-image: url(picture/pin.jpg);
     background-position: center;
     margin-right: 10px;
 }
@@ -90,7 +90,7 @@ div .p1{
     float: left;
     width: 190px;
     height: 400px;
-    background-image: url(1.jpg);
+    background-image: url(picture/1.jpg);
     background-position: center;
     margin-left: 10px;
 }

@@ -37,7 +37,7 @@ hr{
     width: 200px;
     height: 300px;
     border:1px solid red;
-    background: url(pin.jpg) no-repeat;
+    background: url(picture/pin.jpg) no-repeat;
     margin-right: 20px;
 }
 .img-1 {
@@ -141,7 +141,7 @@ hr{
 width: 700px;
 height: 700px;
 border: 1px solid red;
-background: url(pin2.jpg) no-repeat;
+background: url(picture/pin2.jpg) no-repeat;
 background-size: cover;
 background-position: center;
 /* 裁剪出圆形区域 */
@@ -158,11 +158,11 @@ clip-path: circle(270px at 350px 350px);
     border: 1px solid #000;
     margin: 10px auto;
     /* 给盒子加多个背景，按照背景语法格式书写，多个背景使用逗号隔开 */
-    background: url(pin3.jpg) no-repeat left top,
-    url(pin3.jpg) no-repeat right top,
-    url(pin3.jpg) no-repeat right bottom,
-    url(pin3.jpg) no-repeat left bottom,
-    url(pin3.jpg) no-repeat center;
+    background: url(picture/pin3.jpg) no-repeat left top,
+    url(picture/pin3.jpg) no-repeat right top,
+    url(picture/pin3.jpg) no-repeat right bottom,
+    url(picture/pin3.jpg) no-repeat left bottom,
+    url(picture/pin3.jpg) no-repeat center;
     background-color: black;
 }
 /*body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
