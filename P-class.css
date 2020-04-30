@@ -8,10 +8,25 @@ div .p1{
 div .p2{
     font-size: medium;
     font-family: 'Times New Roman', 幼圆;
+    text-indent: 2em;
 }
 div .p3{
     font-size: small;
     font-family: 'Times New Roman', 幼圆;
+    text-indent: 2em;
+}
+div .p4{
+    margin: 20px;
+}
+div .p5{
+    margin: 0px;
+}
+div .pcen{
+    text-align: center;
+}
+.p-cen{
+    margin:0 auto;
+    width: 722px;
 }
 .div1{
     width: 0;
@@ -29,8 +44,28 @@ div .p3{
     border-right: 200px solid transparent;
 }
 .div3{
-    width: 300px;
+    width: 350px;
     border: 1px solid black;
+}
+.div4{
+    width: 1000px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: khaki;
+}
+.div5{
+    width: 1000px;
+    height: 21px;
+    margin: 10px auto;
+    background-color: khaki;
+    padding: 20px 0px;
+}
+.div-code{
+    background-color: rgb(238, 238, 238);
+    padding-left: 50px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: "FZShuTi";
 }
 p .bold{
     font-weight: bold;
@@ -39,6 +74,7 @@ p .bold{
 
 a:link{
     color:blue;
+    text-decoration: none;
 }
 /*超链接点击之后*/
 a:visited{
@@ -46,11 +82,11 @@ a:visited{
 }
 /*鼠标悬停，放到标签上的时候*/
 a:hover{
-    color:blue;
+    color:forestgreen;
 }
 /*鼠标点击链接，但是不松手的时候*/
 a:active{
-    color:grey;
+    color:rgb(0, 10, 116);
 }
 div input:focus{
     border:3px solid #FF6F3D;
@@ -106,4 +142,7 @@ tr .td2:hover{
     width: 100px;
     border: 1px solid black;
     font-family: 'Times New Roman',幼圆;
+}
+.indent{
+    text-indent: 2em;
 }

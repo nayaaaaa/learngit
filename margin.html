@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+    <link rel="stylesheet" href="P-class.css">
+</head>
+<body>
+    <h2 align="center">Margin相关</h2>
+    <div>
+        <p class="p1">margin塌陷/margin重叠</p>
+        <p class="p2">标准文档流中，竖直方向的margin不叠加，取较大的值作为margin(水平方向的margin是可以叠加的，即水平方向没有塌陷现象)</p>
+        <p class="p2">如果不在标准流，比如盒子都浮动了，那么两个盒子之间是没有塌陷现象的。</p>
+        <p class="p1">盒子居中margin:0 auto</p>
+        <div class="div-code">
+            <p>margin-left: 0;</p>
+            <p>margin-right: auto;</p>
+        </div>
+        <ul>
+            <li>只有标准流的盒子，才能使用margin:0 auto;居中。也就是说，当一个盒子浮动了、绝对定位了、固定定位了，都不能使用margin:0 auto;</li>
+            <li>使用margin:0 auto;的盒子，必须有width</li>
+            <li>margin:0 auto;是让盒子居中，不是让盒子里的文本居中。文本的居中，要使用text-align:center;</li>
+        </ul>
+        <p class="p1">父子间的距离不用儿子的margin</p>
+        <p class="p2">margin这个属性，本质上描述的是兄弟和兄弟之间的距离； 最好不要用这个marign表达父子之间的距离。</p>
+        <p class="p2">如果要表达父子之间的距离，我们要使用父亲的padding，而不是儿子的margin。</p>
+        <div class="div4">
+            <p class="p4">一行文字示范(想让文字距离盒子上边框20px，在儿子p标签中使margin=20px，结果将整个div的margin设为20px)</p>
+        </div>
+        <div class="div5">
+            <p class="p5">一行文字示范(想让文字距离盒子上边框20px，在父div标签中使padding=20px 0px)</p>
+        </div>
+        <p class="p1">关于margin的IE6兼容问题</p>
+        <p class="p2">当出现连续浮动的元素，携带与浮动方向相同的margin时，队首的元素，会双倍marign。</p>
+        <p class="p2">使浮动的方向和margin的方向，相反。(浮动的方向和margin的方向相反。并且，前端开发工程师，把这个当做习惯了)</p>
+        <div class="div-code">
+            <p>float: left;</p>
+            <p>margin-right: 40px;</p>
+        </div>
+        <p class="p1">首行缩进两个汉字：</p>
+        <div class="div-code">
+            <p>text-indent: 2em;</p>
+        </div>
+    </div>
+    
+</body>
+</html>

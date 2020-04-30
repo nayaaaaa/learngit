@@ -5,6 +5,7 @@
 .divnav{
     margin: 7px 3px;
 }
+
 div .p1{
     margin: 20px 33px 1px 33px;
 }
@@ -117,10 +118,15 @@ div .p1{
     /*没学，就是居中：*/
     margin: 0 auto;
     margin-top: 10px;
+    border: 0px;
 }
 div .p2{
-    display:inline;
+    float: left;
     color: blanchedalmond;
-    margin:3px 20px 3px 20px;
-
+    margin:8px 25px 3px 20px;
+}
+div .p3{
+    float: left;
+    color: blanchedalmond;
+    margin:8px 25px 3px 45px;
 }
