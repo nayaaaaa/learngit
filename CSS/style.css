@@ -1,0 +1,39 @@
+body {
+    color: grey; }
+  
+  .wrap {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px; }
+  
+  h1 {
+    text-align: center; }
+  
+  .test {
+    background-color: grey;
+    max-width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 0;
+    -webkit-animation: auto-transition 3s infinite alternate;
+            animation: auto-transition 3s infinite alternate; }
+  @-webkit-keyframes auto-transition {
+    0% {
+      -webkit-clip-path: polygon(50px 100px, 160px 30px, 160px 170px);
+              clip-path: polygon(50px 100px, 160px 30px, 160px 170px); }
+    50% {
+      -webkit-clip-path: polygon(50px 100px, 160px 30px, 160px 90px, 360px 90px, 360px 30px, 470px 100px, 360px 170px, 360px 110px, 160px 110px, 160px 170px);
+              clip-path: polygon(50px 100px, 160px 30px, 160px 90px, 360px 90px, 360px 30px, 470px 100px, 360px 170px, 360px 110px, 160px 110px, 160px 170px); }
+    100% {
+      -webkit-clip-path: polygon(50px 110px, 50px 90px, 160px 30px, 260px 30px, 400px 90px, 480px 150px, 480px 50px, 400px 110px, 260px 170px, 160px 170px);
+              clip-path: polygon(50px 110px, 50px 90px, 160px 30px, 260px 30px, 400px 90px, 480px 150px, 480px 50px, 400px 110px, 260px 170px, 160px 170px); } }
+  @keyframes auto-transition {
+    0% {
+      -webkit-clip-path: polygon(50px 100px, 160px 30px, 160px 170px);
+              clip-path: polygon(50px 100px, 160px 30px, 160px 170px); }
+    50% {
+      -webkit-clip-path: polygon(50px 100px, 160px 30px, 160px 90px, 360px 90px, 360px 30px, 470px 100px, 360px 170px, 360px 110px, 160px 110px, 160px 170px);
+              clip-path: polygon(50px 100px, 160px 30px, 160px 90px, 360px 90px, 360px 30px, 470px 100px, 360px 170px, 360px 110px, 160px 110px, 160px 170px); }
+    100% {
+      -webkit-clip-path: polygon(50px 110px, 50px 90px, 160px 30px, 260px 30px, 400px 90px, 480px 150px, 480px 50px, 400px 110px, 260px 170px, 160px 170px);
+              clip-path: polygon(50px 110px, 50px 90px, 160px 30px, 260px 30px, 400px 90px, 480px 150px, 480px 50px, 400px 110px, 260px 170px, 160px 170px); } }
