@@ -31,14 +31,14 @@
       </div>
       <div>
            <p class="p1">元素脱离标准文档流：</p>
-           <ul class="ul3">
+           <ul class="dec ul3">
               <li>浮动</li>
               <li>绝对定位</li>
               <li>固定定位</li>
            </ul>
            <p class="p1">一、浮动</p>
            <p class="p2">用法：float: left;</p>
-          <ul class="ul2">
+          <ul class="dec ul2">
               <li>浮动的元素脱标;</li>
               <li>浮动的元素互相贴靠;</li>
               <li>浮动的元素有“字围”效果:标准流中的文字不会被浮动的盒子遮挡住。</li>
@@ -77,6 +77,32 @@
           </div>
           <p class="p2">绝对定位的盒子脱离了标准文档流。所有的标准文档流的性质，绝对定位之后都不遵守了。</p>
           <p class="p2">绝对定位之后，标签就不区分所谓的行内元素、块级元素了，不需要display:block就可以设置宽、高了。</p>
+          <p class="p2 bigger">绝对定位的参考点（重要）</p>
+          <ul class="dec">
+            <li>如果用top描述，那么参考点就是页面的左上角，而不是浏览器的左上角：</li>
+            <li>如果用bottom描述，那么参考点就是浏览器首屏窗口尺寸（好好理解“首屏”二字），对应的页面的左下角：</li>
+          </ul>
+          <p class="p2 bigger">以盒子为参考点</p>
+          <p class="p2">一个绝对定位的元素，如果父辈元素中也出现了已定位（无论是绝对定位、相对定位，还是固定定位）的元素，那么将以父辈这个元素，为参考点。</p>
+          <ul class="dec">
+            <li> 要听最近的已经定位的祖先元素的，不一定是父亲，可能是爷爷：</li>
+            <li>不一定是相对定位，任何定位，都可以作为儿子的参考点：</li>
+            <p class="p3">子绝父绝、子绝父相、子绝父固，都是可以给儿子定位的。但是在工程上，如果子绝、父绝，没有一个盒子在标准流里面了，所以页面就不稳固，没有任何实战用途。</p>
+            <p class="p3">“子绝父相”有意义：这样可以保证父亲没有脱标，儿子脱标在父亲的范围里面移动。于是，工程上经常这样做：父亲浮动，设置相对定位（零偏移），然后让儿子绝对定位一定的距离。</p>
+            <li>绝对定位的儿子，无视参考的那个盒子的padding：</li>
+            <p class="p-cen1">
+              <img src="picture/absolute-son.png" style="max-width: 100%;"  alt="">
+            </p>
+          </ul>
+          <p class="p2 bigger">工程应用：</p>
+          <div class="box">
+            <span class="dtc"></span>
+            <div class="image">
+              <img src="picture/case.jpg" alt="">
+            </div>
+            <h4>广东深圳宝安区建安一路海雅缤纷城4楼</h3>
+          </div>
+          <iframe src="压盖.html" frameborder="0" height="550px" width="1000px"></iframe>
           <p class="p1">三、固定定位</p>
           <strong>相对定位</strong>
           <p class="p2">让元素相对于自己原来的位置，进行位置调整（可用于盒子的位置微调）。</p>
