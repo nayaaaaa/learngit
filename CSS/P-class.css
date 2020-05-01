@@ -173,11 +173,12 @@ tr .td2:hover{
 			display: block;  /*转为块级元素，才能设置span的宽高*/
 			width: 52px;
 			height: 28px;
-			background-image: url(picture/cover.png);
-			background-position: -108px 0px; /*这里用到了精灵图*/
+            background-image: url(../picture/cover.png);
+            background-position: -108px 0px; /*这里用到了精灵图*/
 			position: absolute;  /*采用绝对定位的方式，将精灵图盖在最上层*/
 			top: -9px;
-			left: 13px;
+            left: 13px;
+            
 		}
 		.box h4{
 			background-color: black;

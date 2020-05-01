@@ -101,9 +101,40 @@
               <img src="picture/case.jpg" alt="">
             </div>
             <h4>广东深圳宝安区建安一路海雅缤纷城4楼</h3>
+            <p>【海雅缤纷城】万达影城（深圳海雅广场4楼）</p>
+            <p>单人电影票，可观看2D</p>
+            <div></div><div></div>
           </div>
-          <iframe src="压盖.html" frameborder="0" height="550px" width="1000px"></iframe>
+          <p class="p2 pcen"><a href="压盖.html" target="_blank">压盖实例</a></p>
+          <p class="p2">让绝对定位中的盒子在父亲里居中</p>
+          <p class="p3">如果盒子是绝对定位的，此时已经脱标了，如果还想让其居中（位于父亲的正中间），可以这样做：</p>
+          <div class="div-code">
+            <p class="p3">div {</p>
+            <p class="p3">width: 600px;</p>
+            <p class="p3">position: absolute;  绝对定位的盒子</p>
+            <p class="p3">left: 50%;           首先，让左边线居中</p>
+            <p class="p3">top: 0;</p>
+            <p class="p3">margin-left: -300px;  然后，向左移动宽度（600px）的一半</p>
+            <p class="p3">}</p>
+          </div>
           <p class="p1">三、固定定位</p>
+          <p class="p2">就是相对浏览器窗口进行定位。无论页面如何滚动，这个盒子显示的位置不变。(IE6不兼容)</p>
+          <p class="p2">用途：</p>
+          <ul>
+            <li>网页右下角的“返回到顶部”</li>
+            <li>顶部导航条</li>
+          </ul>
+          <strong>z-index属性：</strong>
+          <p class="p2">表示谁压着谁。数值大的压盖住数值小的。</p>
+          <ul class="dec ul2">
+            <li >属性值大的位于上层，属性值小的位于下层。</li>
+            <li >z-index值没有单位，就是一个正整数。默认的z-index值是0。</li>
+            <li >如果大家都没有z-index值，或者z-index值一样，那么在HTML代码里写在后面，谁就在上面能压住别人。定位了的元素，永远能够压住没有定位的元素。</li>
+            <li >只有定位了的元素，才能有z-index值。也就是说，不管相对定位、绝对定位、固定定位，都可以使用z-index值。而浮动的元素不能用。</li>
+            <li >从父现象：父亲怂了，儿子再牛逼也没用。意思是，如果父亲1比父亲2大，那么，即使儿子1比儿子2小，儿子1也能在最上层。</li>
+          </ul>
+          <p class="p2">z-index属性的应用还是很广泛的。当好几个已定位的标签出现覆盖的现象时，我们可以用这个z-index属性决定，谁处于最上方。也就是层级的应用。</p>
+          <p class="p3">注意：（1）必须有定位（除去static）（2）用z-index来控制层级数。</p>
           <strong>相对定位</strong>
           <p class="p2">让元素相对于自己原来的位置，进行位置调整（可用于盒子的位置微调）。</p>
           <div class="div-code">
