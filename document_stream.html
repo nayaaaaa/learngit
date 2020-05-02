@@ -109,21 +109,32 @@
           <p class="p2">让绝对定位中的盒子在父亲里居中</p>
           <p class="p3">如果盒子是绝对定位的，此时已经脱标了，如果还想让其居中（位于父亲的正中间），可以这样做：</p>
           <div class="div-code">
-            <p class="p3">div {</p>
-            <p class="p3">width: 600px;</p>
-            <p class="p3">position: absolute;  绝对定位的盒子</p>
-            <p class="p3">left: 50%;           首先，让左边线居中</p>
-            <p class="p3">top: 0;</p>
-            <p class="p3">margin-left: -300px;  然后，向左移动宽度（600px）的一半</p>
-            <p class="p3">}</p>
+            <p >div {</p>
+            <p >width: 600px;</p>
+            <p >position: absolute;  绝对定位的盒子</p>
+            <p >left: 50%;           首先，让左边线居中</p>
+            <p >top: 0;</p>
+            <p>margin-left: -300px;  然后，向左移动宽度（600px）的一半</p>
+            <p>}</p>
           </div>
           <p class="p1">三、固定定位</p>
           <p class="p2">就是相对浏览器窗口进行定位。无论页面如何滚动，这个盒子显示的位置不变。(IE6不兼容)</p>
+          <div class="div-code">
+            <p >position: fixed;</p>
+            <p >bottom: 100px;</p>
+            <p >right: 30px;</p>
+          </div>
           <p class="p2">用途：</p>
           <ul>
             <li>网页右下角的“返回到顶部”</li>
             <li>顶部导航条</li>
           </ul>
+          <p class="p1 pcen">
+            <a href="css-background.html" target="_blank">返回到顶部</a>
+          </p>
+          <p class="p1 pcen">
+            <a href="nav-exa.html" target="_blank">顶部导航条</a>
+          </p>
           <strong>z-index属性：</strong>
           <p class="p2">表示谁压着谁。数值大的压盖住数值小的。</p>
           <ul class="dec ul2">
