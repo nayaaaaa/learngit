@@ -123,8 +123,6 @@ div .t1{
 table .tr1:hover{
     background: #868686;
     border:2px solid;
-
-
 }
 tr .td1{
     border: 1px solid red;
@@ -136,6 +134,17 @@ tr .td2:hover{
     border: 3px solid black;
     background: darkgray;
 }
+div .t2{
+    text-align: center;
+    width: 800px;
+    height: 900px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.t2 .td1{
+    border: 2px solid black;
+}
+
 .dec{
     list-style-type: decimal;
 }
