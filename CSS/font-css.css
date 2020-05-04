@@ -1,0 +1,88 @@
+p{
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "Times New Roman","幼圆","黑体";
+    font-style: italic;
+    font-weight: blod;
+    font-variant: small-caps;
+    background-color: #cccccc;
+}
+#p1:hover{
+    cursor: pointer;
+    text-decoration:underline;
+}
+#p2:hover{
+    cursor:help;
+    overflow:auto;
+}
+.div-1{
+    width: 100px;
+    height: 100px;
+    background-color: hsla(240, 70%, 70%, 0.5);
+    margin-right: 100px;
+    font: 700 14px/24px "宋体"
+}
+#div1{
+    overflow: auto;/*超出的部分让浏览器自行解决*/
+}
+#div2{
+    overflow: visible;/*超出的部分会显示出来*/
+}
+
+#div3{
+    overflow: hidden;/*超出的部分将剪切掉*/
+}
+ul{
+    width: 1250px;
+    height: 60px;
+}
+#ul1{
+    list-style: none;/*去掉列表前面的圆点*/
+    background-color: black;/*设置整个导航栏的背景为灰色*/
+    
+}
+#ul2{
+    list-style-image: url(../picture/1.jpg);
+    margin-left:280px ;
+}
+#li1{
+    float:left;/*平铺*/
+    margin-right: 30px;
+    margin-top: 16px;
+}
+#li2{
+    list-style-image: url(../picture/1.jpg);
+    margin-left:280px ;
+}
+a{
+    text-decoration: none;/*去掉超链的下划线*/
+    font-size: 20px;
+    color: #BBBBBB;/*设置超链的字体为黑色*/
+    font-family:微软雅黑;
+    margin-left: 150px;
+}
+.t1{
+    width: 185px;
+    height: 250px;
+}
+.sec-div{
+    display: flex;
+}
+.div-2{
+    font-size: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Microsoft Yahei";
+    color: #666;
+    text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+    background-color: #666;
+}
+.div-3{
+    font-size: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Microsoft Yahei";
+    color: #666;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #fff;
+    background-color: #666;
+}

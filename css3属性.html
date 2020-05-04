@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3</title>
+    <link rel="stylesheet" href="CSS/css3.css">
+</head>
+<body>
+    <div>
+        <p class="p1">盒模型中的 box-sizing 属性:</p>
+        <p class="p2"></p>
+        <div class="div-code">
+            <p>box-sizing: content-box;</p>
+            <p>盒子的实际宽度 = 设置的 width + padding + border</p>
+        </div>
+        <div class="div-code">
+            <p>box-sizing: border-box;</p>
+            <p>盒子的实际宽度 = 设置的 width</p>
+        </div> 
+        <p class="p1">兼容性问题：私有前缀</p>
+        <div class="div-code">
+            <p>-webkit-: 谷歌 苹果</p>
+            <p>-moz-:火狐</p>
+            <p>-ms-：IE</p>
+            <p>-o-：欧朋</p>
+            <pre>
+                例如：
+                .box{
+                    background: -webkit-linear-gradient(left, green, yellow);
+                    background: -moz-linear-gradient(left, green, yellow);
+                    background: -ms-linear-gradient(left, green, yellow);
+                    background: -o-linear-gradient(left, green, yellow);
+                    background: linear-gradient(left, green, yellow);
+                }
+            </pre>
+        </div>
+        <p class="p1">边框</p>
+        <p class="p2">边框圆角：border-radius 属性(水平半径和垂直半径：)</p>
+        <div class="div-code">
+            <p>border-top-left-radius: 60px 120px;        //参数解释：水平半径   垂直半径</p>
+            <p>border-top-right-radius: 60px 120px;</p>
+        </div>
+        <p class="p2">复合写法</p>
+        <div class="div-code">
+            <p>border-radius: 60px/120px;             //参数：水平半径/垂直半径</p>
+            <p>border-radius: 20px 60px 100px 140px;  //从左上开始，顺时针赋值。如果当前角没有值，取对角的值</p>
+            <p>border-radius: 20px 60px;</p>
+            <p>border-radius: 60px;          //最简洁写法</p>
+        </div>
+        <strong>实例</strong>
+        <div class="p-cen1">
+            <div class="parent">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+            </div>
+        </div>
+        <div class="cl"></div>
+        <p class="p2">边框阴影：box-shadow 属性</p>
+        <div class="div-code">
+            <p>box-shadow: 水平偏移 垂直偏移 模糊程度 阴影大小 阴影颜色</p>
+            <p>box-shadow: 15px 21px 48px -2px #666;</p>
+        </div>
+        <strong>实例</strong>
+        <br>    
+        <div class="box-e "></div>
+        <div class="box-i "></div>
+        <div class="cl"></div>
+        <p class="p2">边框图片</p>
+        <div class="div-code">
+            <pre>
+                /* 边框图片的路径*/
+                border-image-source: url("images/border.png");
+
+                /* 图片边框的裁剪*/
+                border-image-slice: 27;
+
+                /*图片边框的宽度*/
+                border-image-width: 27px;
+
+                /*边框图片的平铺*/
+                /* repeat :正常平铺 但是可能会显示不完整*/
+                /*round: 平铺 但是保证 图片完整*/
+                /*stretch: 拉伸显示*/
+                border-image-repeat: stretch;
+            </pre>
+        </div>
+        <div class="div-code">
+            <p>综合写法：  border-image: url("images/border.png") 27/20px round;</p>
+        </div>
+        <div class="round"> /* 边框图片的路径*/border-image-source: url</div>
+    </div>
+</body>
+</html>
